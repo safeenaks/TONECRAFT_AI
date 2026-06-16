@@ -1,9 +1,6 @@
 // server/index.js
 
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
 
 import express from "express";
 import cors from "cors";
@@ -33,6 +30,10 @@ const groq = new Groq({
 /* =========================
    ROUTE
 ========================= */
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 app.post("/generate", async (req, res) => {
   try {

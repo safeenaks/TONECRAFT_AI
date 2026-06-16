@@ -30,7 +30,9 @@ const groq = new Groq({
 /* =========================
    ROUTE
 ========================= */
-
+app.get("/", (req, res) => {
+  res.send("ToneCraft AI backend is running");
+});
 
 app.post("/generate", async (req, res) => {
   try {

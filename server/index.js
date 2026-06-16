@@ -1,4 +1,7 @@
 // server/index.js
+app.get("/", (req, res) => {
+  res.send("ToneCraft AI backend is running");
+});
 
 import express from "express";
 import cors from "cors";
